@@ -9,12 +9,14 @@
   {{ end }}
   <link rel="icon" type="image/x-icon" href="{{ .Theme.Favicon }}">
   <link rel="stylesheet" href="/main.css">
-  <link rel="stylesheet" href="/prismjs-theme.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/prismjs@v1.x/components/prism-core.min.js"></script>
-	<script src="https://unpkg.com/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+  {{ if .Theme.CodeSyntax }}
+    <link rel="stylesheet" href="/prismjs-theme.css">
+    <script src="https://unpkg.com/prismjs@v1.x/components/prism-core.min.js"></script>
+    <script src="https://unpkg.com/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+  {{ end }}
 </head>
 <body>
   <nav>

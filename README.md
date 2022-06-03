@@ -10,6 +10,7 @@ ThemeParams:
   SiteName: Rendr.js
   SiteLogo: /logo.png
   Favicon: /logo.png
+  CodeSyntax: true
   Menu:
     Main:
       - Name: Introduction
