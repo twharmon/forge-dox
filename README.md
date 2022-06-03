@@ -3,7 +3,7 @@ Simple theme for Forge.
 
 ## Example Config
 ```yml
-Theme: forge
+Theme: forge-dox
 Port: 8000
 
 ThemeParams:
