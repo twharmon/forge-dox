@@ -9,6 +9,7 @@ Port: 8000
 ThemeParams:
   SiteName: Rendr.js
   SiteLogo: /logo.png
+  Favicon: /logo.png
   Menu:
     Main:
       - Name: Introduction
