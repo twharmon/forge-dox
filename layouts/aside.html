@@ -3,7 +3,7 @@
     <ul>
       {{ range $link := index .Theme.Menu .Page.aside }}
         <li>
-          <a href="{{ $link.Url }}"{{ if eq $link.Url $.Forge.Path }} class="active"{{ end }}>
+          <a href="{{ $link.Url }}"{{ if eq $link.Url $.Pathname }} class="active"{{ end }}>
             {{ $link.Name }}
           </a>
         </li>
