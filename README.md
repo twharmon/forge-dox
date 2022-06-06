@@ -3,23 +3,32 @@ Simple theme for Forge.
 
 ## Example Config
 ```yml
-Theme: forge-dox
-Port: 8000
+DevServer:
+  Port: 8000
 
-ThemeParams:
-  SiteName: Rendr.js
-  SiteLogo: /logo.png
-  Favicon: /logo.png
-  CodeSyntax: true
-  Menu:
-    Main:
-      - Name: Introduction
-        Url: /
-      - Name: Docs
-        Url: /docs/getting-started
-    Docs:
-      - Name: Getting Started
-        Url: /docs/getting-started
-      - Name: Components
-        Url: /docs/components
+Markdown:
+  Extensions:
+    - footnote
+    - linkify
+
+Theme:
+  Name: forge-dox
+  Params:
+    SiteName: Rendr.js
+    SiteLogo: /logo.png
+    CodeSyntax: true
+    Menu:
+      Main:
+        - Name: Introduction
+          Url: /
+        - Name: Docs
+          Url: /docs/getting-started
+        - Name: Github
+          Url: https://github.com/example/example
+      Docs:
+        - Name: Getting Started
+          Url: /docs/getting-started
+        - Name: Components
+          Url: /docs/components
+
 ```

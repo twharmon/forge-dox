@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .Page.title }}{{ .Page.title }} | {{ end }}{{ .Theme.SiteName }}</title>
   {{ if .Forge.Debug }}
-  <script src="/hot.js"></script>
+    <script src="/hot.js"></script>
   {{ end }}
-  <link rel="icon" type="image/x-icon" href="{{ .Theme.Favicon }}">
+  {{ if .Theme.Favicon }}
+    <link rel="icon" type="image/x-icon" href="{{ .Theme.Favicon }}">
+  {{ end }}
   <link rel="stylesheet" href="/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
