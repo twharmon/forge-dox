@@ -3,7 +3,6 @@
     --gray-200: #e9ecef;
     --gray-500: #adb5bd;
     --color-link: #0055bb;
-    --color-visited-link: #8440f1;
     --body-background: white;
     --body-font-color: black;
     --hint-color-info: #6bf;
@@ -17,7 +16,6 @@
         --gray-200: rgba(255, 255, 255, 0.2);
         --gray-500: rgba(255, 255, 255, 0.5);
         --color-link: #84b2ff;
-        --color-visited-link: #b88dff;
         --body-background: #343a40;
         --body-font-color: #e9ecef;
         --hint-color-info: #6bf;
@@ -61,6 +59,15 @@ body {
     flex-shrink: 0;
 }
 
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-link);
+}
+
 .aside ul {
     padding-left: 0;
     margin: 0;
@@ -71,21 +78,16 @@ body {
     margin-bottom: 20px;
 }
 
-.aside a {
+.aside a, nav a {
     color: var(--body-font-color);
 }
 
-.aside a.active {
+.aside a.active, .aside a:hover, nav a.active, nav a:hover {
     color: var(--color-link);
 }
 
-a {
-    color: var(--color-link);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--color-visited-link);
+.brand a:hover {
+    color: var(--body-font-color);
 }
 
 nav {
@@ -93,14 +95,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
-}
-
-.brand a {
-    color: var(--body-font-color);
-}
-
-.brand a:hover {
-    color: var(--body-font-color);
 }
 
 .brand img {
