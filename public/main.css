@@ -140,8 +140,8 @@ li {
     margin-bottom: 10px;
 }
 
-ul {
-    margin-bottom: 20px;
+ul, p, pre {
+    margin-bottom: 30px !important;
 }
 
 code {
@@ -149,10 +149,6 @@ code {
     padding: 1px 6px 4px 6px;
     border-radius: 4px;
     margin: 0 1px;
-}
-
-pre {
-    margin-bottom: 20px !important;
 }
 
 pre > code {
