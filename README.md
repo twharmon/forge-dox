@@ -14,7 +14,7 @@ Markdown:
 Theme:
   Name: forge-dox
   Params:
-    SiteName: Rendr.js
+    SiteName: My Site
     SiteLogo: /logo.png
     CodeSyntax: true
     Menu:
